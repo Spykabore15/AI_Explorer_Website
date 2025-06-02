@@ -1,0 +1,20 @@
+[
+  {
+    "question": "Quel est le principal objectif de la vision par ordinateur ?",
+    "choices": ["Analyser des images et vidéos pour en extraire des informations", "Traduire des textes", "Synthétiser de la parole", "Optimiser des bases de données"],
+    "correctAnswer": 0,
+    "explanation": "La vision par ordinateur vise à extraire automatiquement des informations à partir d'images ou de vidéos."
+  },
+  {
+    "question": "Quel type de réseau de neurones est le plus utilisé pour la reconnaissance d'images ?",
+    "choices": ["Réseau de neurones récurrent (RNN)", "Réseau de neurones convolutif (CNN)", "Perceptron simple", "Réseau de Hopfield"],
+    "correctAnswer": 1,
+    "explanation": "Les CNN sont spécialisés dans le traitement d'images."
+  },
+  {
+    "question": "Quelle tâche n'est PAS typique de la vision par ordinateur ?",
+    "choices": ["Détection d'objets", "Segmentation d'image", "Traduction automatique", "Reconnaissance faciale"],
+    "correctAnswer": 2,
+    "explanation": "La traduction automatique relève du traitement du langage naturel, pas de la vision."
+  }
+] 

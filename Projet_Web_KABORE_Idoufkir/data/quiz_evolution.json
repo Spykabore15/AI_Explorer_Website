@@ -1,0 +1,57 @@
+[
+  {
+    "question": "Quand a eu lieu le workshop de Dartmouth, souvent considéré comme l'acte de naissance de l'IA en tant que domaine de recherche ?",
+    "choices": [
+      "1945",
+      "1956",
+      "1969",
+      "1980"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Le workshop de Dartmouth, où le terme 'Intelligence Artificielle' a été forgé, s'est tenu en 1956."
+  },
+  {
+    "question": "Qu'est-ce qu'un \"hiver de l'IA\" ?",
+    "choices": [
+      "Une période de l'année où les IA fonctionnent moins bien à cause du froid.",
+      "Une conférence annuelle sur l'IA se tenant en hiver.",
+      "Une période de réduction des financements et de l'intérêt pour la recherche en IA due à des attentes déçues.",
+      "Un type spécifique d'algorithme d'IA conçu pour les basses températures."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Les 'hivers de l'IA' sont des périodes où le progrès ralentit et l'enthousiasme diminue, souvent après une phase d'optimisme excessif."
+  },
+  {
+    "question": "Quelle technologie a été un moteur majeur de la révolution de l'IA dans les années 2010 ?",
+    "choices": [
+      "Les ordinateurs centraux (mainframes).",
+      "Les systèmes experts basés sur des règles.",
+      "Le Deep Learning et la disponibilité de grandes quantités de données (Big Data) ainsi que la puissance des GPU.",
+      "Le langage de programmation COBOL."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Les avancées en Deep Learning, combinées au Big Data et à la puissance de calcul des GPU, ont permis des progrès spectaculaires en IA à partir des années 2010."
+  },
+  {
+    "question": "Qu'est-ce que l'IA Générative (GenAI) ?",
+    "choices": [
+      "Une IA capable de générer uniquement du code informatique.",
+      "Une IA qui se concentre sur la génération de rapports financiers.",
+      "Une IA capable de créer du contenu original (texte, images, musique, etc.) qui n'existait pas auparavant.",
+      "Une IA qui ne fait que classifier des données existantes."
+    ],
+    "correctAnswer": 2,
+    "explanation": "L'IA Générative, illustrée par des modèles comme GPT ou DALL-E, peut produire de nouveaux contenus créatifs dans divers formats."
+  },
+  {
+    "question": "Lequel de ces concepts est une tendance actuelle importante en IA, visant à rendre les décisions des modèles plus transparentes ?",
+    "choices": [
+      "L'IA Occulte (Occult AI)",
+      "L'IA Explicable (XAI - Explainable AI)",
+      "L'IA Secrète (Secretive AI)",
+      "L'IA Impénétrable (Impenetrable AI)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "L'IA Explicable (XAI) est un domaine de recherche crucial qui cherche à développer des méthodes pour comprendre et interpréter les décisions prises par les modèles d'IA complexes."
+  }
+] 

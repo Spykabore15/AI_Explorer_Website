@@ -1,0 +1,20 @@
+[
+  {
+    "question": "Quel secteur utilise le machine learning pour la détection de fraudes ?",
+    "choices": ["Finance", "Agriculture", "BTP", "Tourisme"],
+    "correctAnswer": 0,
+    "explanation": "La finance utilise beaucoup le ML pour détecter les transactions frauduleuses."
+  },
+  {
+    "question": "Quel est un exemple d'application du machine learning dans la santé ?",
+    "choices": ["Reconnaissance vocale", "Diagnostic médical assisté", "Traduction automatique", "Gestion de stock"],
+    "correctAnswer": 1,
+    "explanation": "Le ML est utilisé pour aider au diagnostic à partir d'images médicales ou de données patient."
+  },
+  {
+    "question": "Quel algorithme est souvent utilisé pour la recommandation de produits ?",
+    "choices": ["K-means", "Réseau de neurones", "Filtrage collaboratif", "SVM"],
+    "correctAnswer": 2,
+    "explanation": "Le filtrage collaboratif est la base des systèmes de recommandation."
+  }
+] 

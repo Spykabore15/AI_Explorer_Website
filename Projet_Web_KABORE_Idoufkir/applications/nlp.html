@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application IA: NLP - AI Explorer</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.jpeg" alt="AI Explorer Logo" style="height: 32px; width: auto;">
+                </a>
+            </div>
+            <ul>
+                <li><a href="../bases_ia.html">Les bases de l'IA</a></li>
+                <li><a href="../evolution_tendances.html">Evolution et tendances</a></li>
+                <li><a href="../ia_experts.html">IA pour les experts</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Applications</a>
+                    <div class="dropdown-content">
+                        <a href="vision.html">Vision</a>
+                        <a href="nlp.html">NLP</a>
+                        <a href="machine_learning_app.html">Machine Learning</a>
+                        <a href="robotique.html">Robotique</a>
+                        <a href="systemes_experts.html">Systèmes experts</a>
+                        <a href="voix.html">Voix</a>
+                    </div>
+                </li>
+                <li><a href="../quiz_central.html">Quiz central</a></li>
+                <li><a href="../a_propos.html">A propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title-section">
+            <h1>Application de l'IA : Traitement du Langage Naturel (NLP)</h1>
+            <p>Comment les machines comprennent et interagissent avec le langage humain.</p>
+        </section>
+
+        <section id="explications-exemples">
+            <h2>Explications et Exemples</h2>
+            <article class="content-article">
+                <h3>Qu'est-ce que le NLP (Traitement du Langage Naturel) ?</h3>
+                <p>Le Traitement du Langage Naturel (NLP - Natural Language Processing), parfois appelé TAL (Traitement Automatique des Langues), est une branche de l'intelligence artificielle, de l'informatique et de la linguistique qui se concentre sur l'interaction entre les ordinateurs et le langage humain (naturel). L'objectif principal du NLP est de doter les machines de la capacité de comprendre, d'interpréter, de générer et de répondre au langage humain, qu'il soit sous forme de texte ou de parole, d'une manière qui soit à la fois utile et significative.</p>
+                <p>Le NLP implique une gamme de tâches complexes, car le langage humain est intrinsèquement ambigu, contextuel et en constante évolution. Parmi ces tâches, on trouve :</p>
+                <ul>
+                    <li><strong>Analyse Lexicale :</strong> Découper le texte en unités (mots, tokens), identifier les lemmes (forme de base d'un mot).</li>
+                    <li><strong>Analyse Syntaxique (Parsing) :</strong> Comprendre la structure grammaticale des phrases, identifier les relations entre les mots (ex: sujet, verbe, objet).</li>
+                    <li><strong>Analyse Sémantique :</strong> Dégager le sens des mots, des phrases et des textes. Cela inclut la désambiguïsation (choisir le bon sens d'un mot polysémique en fonction du contexte), la reconnaissance des entités nommées (identifier les personnes, lieux, organisations), et l'extraction de relations.</li>
+                    <li><strong>Analyse Pragmatique/Discours :</strong> Comprendre le sens au-delà du littéral, en tenant compte du contexte, de l'intention du locuteur, et des connaissances du monde.</li>
+                    <li><strong>Génération de Langage Naturel (NLG) :</strong> Produire du texte compréhensible et pertinent à partir de données structurées ou de représentations internes.</li>
+                </ul>
+                <p>Le NLP s'appuie sur des techniques issues du Machine Learning (notamment le Deep Learning avec les RNN, LSTM, et surtout les Transformers), des statistiques, et de la linguistique computationnelle.</p>
+            </article>
+            <article class="content-article">
+                <h3>Exemples d'Applications Concrètes du NLP</h3>
+                <p>Le NLP alimente une myriade d'applications qui transforment notre façon d'interagir avec l'information et la technologie :</p>
+                <ul>
+                    <li><strong>Traduction automatique :</strong> Des services comme Google Translate, DeepL ou Microsoft Translator utilisent des modèles de NLP avancés (souvent basés sur des Transformers) pour traduire du texte d'une langue à une autre avec une fluidité croissante.</li>
+                    <li><strong>Analyse de sentiments et d'opinions :</strong> Extraire les émotions, opinions et attitudes exprimées dans des textes (commentaires clients, réseaux sociaux, articles de presse). Utile pour la veille de marque, l'analyse de marché, la détection de tendances.</li>
+                    <li><strong>Chatbots et assistants virtuels :</strong> Des agents conversationnels comme Siri, Alexa, Google Assistant, ou les chatbots de service client, qui comprennent les requêtes en langage naturel et y répondent de manière appropriée.</li>
+                    <li><strong>Résumé automatique de texte :</strong> Générer des versions concises de longs documents (articles, rapports) en identifiant les informations clés. Permet de gagner du temps et de traiter de grands volumes d'information.</li>
+                    <li><strong>Reconnaissance d'Entités Nommées (NER) :</strong> Identifier et catégoriser des entités clés dans un texte, telles que les noms de personnes, d'organisations, de lieux, les dates, les montants monétaires.</li>
+                    <li><strong>Classification de texte :</strong> Catégoriser automatiquement des documents dans des thèmes prédéfinis (ex: tri d'e-mails, organisation d'articles d'actualité).</li>
+                    <li><strong>Extraction d'informations :</strong> Identifier et extraire des données structurées à partir de textes non structurés (ex: extraire les détails d'un contrat, les symptômes d'un rapport médical).</li>
+                    <li><strong>Modération de contenu :</strong> Détecter et filtrer automatiquement les contenus indésirables, haineux ou illégaux sur les plateformes en ligne.</li>
+                    <li><strong>Question Answering (QA) :</strong> Systèmes capables de répondre à des questions posées en langage naturel, en se basant sur un corpus de documents ou une base de connaissances.</li>
+                    <li><strong>Génération de Langage Naturel (NLG) :</strong> Création de descriptions de produits, de rapports financiers, de réponses personnalisées, voire d'articles de presse ou de fiction.</li>
+                    <li><strong>Technologies d'assistance :</strong> Aide à la lecture pour les dyslexiques, outils de communication pour les personnes ayant des troubles de la parole.</li>
+                </ul>
+                <p>La connexion étroite entre le NLP et les technologies vocales (ASR/TTS) est également fondamentale, car la compréhension et la génération du langage parlé passent par des étapes de traitement du langage naturel.</p>
+            </article>
+        </section>
+
+        <section id="visuels-placeholders">
+            <h2>Visuels Illustratifs</h2>
+            <p>Quelques exemples visuels pour mieux comprendre :</p>
+            <div class="visual-placeholder content-image" style="margin: 1rem 0; text-align: center;">
+                <img src="../images/n1.png" alt="Illustration du processus NLP" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+            </div>
+            <div class="visual-placeholder content-image" style="margin: 1rem 0; text-align: center; display:flex; align-items:center; justify-content:center;">
+                <img src="../images/n2.png" alt="Exemple d'application NLP : Analyse de sentiments" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+            </div>
+        </section>
+
+        <section id="quiz-application">
+            <h2>Quiz : Traitement du Langage Naturel (NLP)</h2>
+            <div class="quiz-placeholder" data-quiz-file="../data/quiz_nlp.json" style="padding:20px; background:#f9f9f9; border:1px dashed #ccc; text-align:center;">
+                <p>Chargement du quiz...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AI Explorer. Projet Web KABORE Juvénis & IDOUFKIR Marouane. W3C Compliant (objectif).</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/quiz.js" defer></script>
+</body>
+</html> 

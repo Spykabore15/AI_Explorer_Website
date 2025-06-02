@@ -1,0 +1,147 @@
+<!-- Fichier HTML pour la page 'Les Bases de l'IA' -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- En-tête du document HTML -->
+    <meta charset="UTF-8"> <!-- Définition de l'encodage des caractères -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuration de la vue pour les appareils mobiles -->
+    <title>Les Bases de l'IA - AI Explorer</title> <!-- Titre de la page affiché dans l'onglet du navigateur -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Lien vers la feuille de style CSS externe -->
+</head>
+<body style="background-image: url('images/b0.png'); background-repeat: no-repeat; background-size: cover; background-position: center center; background-attachment: fixed;">
+    <!-- Corps du document HTML -->
+    <header>
+        <!-- Section d'en-tête de la page -->
+        <nav>
+            <!-- Barre de navigation -->
+            <div class="logo">
+                <!-- Conteneur du logo -->
+                <a href="index.html">
+                    <img src="images/logo.jpeg" alt="AI Explorer Logo" style="height: 32px; width: auto;">
+                </a>
+            </div>
+            <ul>
+                <!-- Liste des liens de navigation -->
+                <li><a href="bases_ia.html">Les bases de l'IA</a></li> <!-- Lien vers la page des bases de l'IA -->
+                <li><a href="evolution_tendances.html">Evolution et tendances</a></li> <!-- Lien vers la page évolution et tendances -->
+                <li><a href="ia_experts.html">IA pour les experts</a></li> <!-- Lien vers la page IA pour les experts -->
+                <li class="dropdown">
+                    <!-- Élément de liste pour le menu déroulant 'Applications' -->
+                    <a href="javascript:void(0)" class="dropbtn">Applications</a> <!-- Bouton du menu déroulant -->
+                    <div class="dropdown-content">
+                        <!-- Contenu du menu déroulant -->
+                        <a href="applications/vision.html">Vision</a> <!-- Lien vers la page Vision -->
+                        <a href="applications/nlp.html">NLP</a> <!-- Lien vers la page NLP -->
+                        <a href="applications/machine_learning_app.html">Machine Learning</a> <!-- Lien vers la page Machine Learning -->
+                        <a href="applications/robotique.html">Robotique</a> <!-- Lien vers la page Robotique -->
+                        <a href="applications/systemes_experts.html">Systèmes experts</a> <!-- Lien vers la page Systèmes experts -->
+                        <a href="applications/voix.html">Voix</a> <!-- Lien vers la page Voix -->
+                    </div>
+                </li>
+                <li><a href="quiz_central.html">Quiz central</a></li> <!-- Lien vers la page Quiz central -->
+                <li><a href="a_propos.html">A propos</a></li> <!-- Lien vers la page A propos -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contenu principal de la page -->
+        <section class="page-title-section">
+            <!-- Section du titre de la page -->
+            <h1>Les Bases de l'Intelligence Artificielle</h1> <!-- Titre principal de la page -->
+            <p>Comprendre les concepts fondamentaux de l'IA, du Machine Learning et du Deep Learning.</p> <!-- Sous-titre ou description -->
+        </section>
+
+        <section id="definitions">
+            <!-- Section des définitions clés -->
+            <h2>Définitions Clés</h2> <!-- Titre de la section -->
+            <article class="content-article">
+                <!-- Article sur l'Intelligence Artificielle -->
+                <h3>Intelligence Artificielle (IA)</h3> <!-- Titre de l'article -->
+                <p>L'intelligence artificielle (IA) est un vaste domaine de l'informatique qui ambitionne de créer des machines et des systèmes capables de réaliser des tâches qui nécessiteraient normalement l'intelligence humaine. Cela englobe un large éventail de capacités, telles que :</p>
+                <ul data-animate-list>
+                    <!-- Liste des capacités de l'IA -->
+                    <li><strong>L'apprentissage :</strong> Acquérir des connaissances et des compétences à partir de données ou d'expériences.</li>
+                    <li><strong>La résolution de problèmes :</strong> Trouver des solutions à des défis complexes.</li>
+                    <li><strong>La perception :</strong> Interpréter le monde à travers les sens (vision, audition, etc.).</li>
+                    <li><strong>La compréhension du langage naturel :</strong> Traiter et comprendre le langage humain (écrit ou parlé).</li>
+                    <li><strong>La prise de décision :</strong> Choisir une action parmi plusieurs options possibles, souvent dans des conditions d'incertitude.</li>
+                </ul>
+                <p>L'IA ne se limite pas à reproduire l'intelligence humaine ; elle cherche aussi à la dépasser dans certains domaines spécifiques. On distingue souvent l'IA "faible" ou "étroite", spécialisée dans une tâche particulière (ex: un moteur de recommandation), de l'IA "forte" ou "générale", qui posséderait des capacités cognitives comparables à celles d'un humain dans tous les domaines (encore largement théorique).</p>
+                <!-- Visuel placeholder : Ceci est un espace réservé pour un futur élément visuel (image, schéma) -->
+                <img src="images/b1.jpg" alt="Schéma IA" class="content-image" style="height: 500px; width: auto; display: block; margin-left: auto; margin-right: auto;">
+            </article>
+            <article class="content-article">
+                <!-- Article sur le Machine Learning -->
+                <h3>Machine Learning (Apprentissage Automatique)</h3> <!-- Titre de l'article -->
+                <p>Le Machine Learning (ML), ou apprentissage automatique, est un sous-domaine crucial de l'IA. Son principe fondamental est de permettre aux ordinateurs d'apprendre à partir de données sans avoir été explicitement programmés pour chaque tâche. Au lieu de suivre des instructions spécifiques codées par des humains pour résoudre un problème, les algorithmes de ML utilisent des données pour "entraîner" un modèle. Ce modèle peut ensuite identifier des motifs (patterns), faire des prédictions, ou prendre des décisions basées sur de nouvelles données qu'il n'a jamais rencontrées auparavant.</p>
+                <p>Il existe plusieurs types d'apprentissage automatique :</p>
+                <ul data-animate-list>
+                    <!-- Liste des types d'apprentissage automatique -->
+                    <li><strong>Apprentissage supervisé :</strong> Le système apprend à partir de données étiquetées (c'est-à-dire où la "bonne réponse" est fournie). Par exemple, pour reconnaître des images de chats, on lui fournit des milliers d'images en précisant lesquelles sont des chats et lesquelles ne le sont pas.</li>
+                    <li><strong>Apprentissage non supervisé :</strong> Le système explore des données non étiquetées pour y découvrir des structures ou des relations cachées. Par exemple, regrouper des clients aux comportements d'achat similaires.</li>
+                    <li><strong>Apprentissage par renforcement :</strong> L'agent apprend en interagissant avec un environnement. Il reçoit des récompenses ou des punitions en fonction de ses actions, ce qui l'aide à développer une stratégie pour maximiser les récompenses.</li>
+                </ul>
+                <img src="images/b2.png" alt="Schéma IA" class="content-image" style="height: 500px; width: auto; display: block; margin-left: auto; margin-right: auto;">
+            </article>
+            <article class="content-article">
+                <!-- Article sur le Deep Learning -->
+                <h3>Deep Learning (Apprentissage Profond)</h3> <!-- Titre de l'article -->
+                <p>Le Deep Learning (ou apprentissage profond) est une technique de Machine Learning particulièrement puissante, inspirée par la structure et la fonction du cerveau humain, notamment ses réseaux de neurones. Il utilise des architectures de réseaux de neurones artificiels comportant de nombreuses couches de traitement (d'où le terme "profond"). Chaque couche reçoit des informations de la couche précédente, effectue des calculs et des transformations, et transmet ses résultats à la couche suivante.</p>
+                <p>Cette structure hiérarchique permet aux modèles de Deep Learning d'apprendre automatiquement des représentations (ou "features") de plus en plus complexes et abstraites à partir des données brutes. Par exemple, dans la reconnaissance d'images, les premières couches pourraient détecter des arêtes ou des coins, les couches intermédiaires des formes plus complexes comme des yeux ou des nez, et les couches finales des visages entiers.</p>
+                <p>Le Deep Learning a permis des avancées spectaculaires dans de nombreux domaines, notamment :</p>
+                <ul data-animate-list>
+                    <!-- Liste des domaines d'application du Deep Learning -->
+                    <li><strong>Vision par ordinateur :</strong> Classification d'images, détection d'objets, segmentation.</li>
+                    <li><strong>Traitement du langage naturel :</strong> Traduction automatique, génération de texte, analyse de sentiments.</li>
+                    <li><strong>Reconnaissance vocale :</strong> Conversion de la parole en texte.</li>
+                    <li><strong>Jeux :</strong> Des IA capables de battre les meilleurs joueurs humains à des jeux complexes comme Go ou les échecs.</li>
+                </ul>
+                <p>Il nécessite généralement de grandes quantités de données pour l'entraînement et une puissance de calcul significative (souvent des GPUs).</p>
+                 <!-- Visuel placeholder : Espace réservé pour un visuel sur les réseaux de neurones -->
+                 <img src="images/b3.png" alt="Schéma IA" class="content-image" style="height: 500px; width: auto; display: block; margin-left: auto; margin-right: auto;">
+            </article>
+        </section>
+
+        <section id="quiz-bases">
+            <!-- Section du quiz sur les bases de l'IA -->
+            <h2>Quiz : Les Bases de l'IA</h2> <!-- Titre de la section -->
+            <p><strong>Testez vos connaissances sur les définitions clés, les types d'apprentissage et les concepts fondamentaux de l'IA présentés sur cette page.</strong></p> <!-- Description du quiz -->
+            <div class="quiz-placeholder" data-quiz-file="data/quiz_bases.json" style="padding:20px; background:#f9f9f9; border:1px dashed #ccc; text-align:center;">
+                <!-- Conteneur pour le quiz, chargé dynamiquement -->
+                <p>Chargement du quiz...</p> <!-- Message affiché pendant le chargement du quiz -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Pied de page -->
+        <p>&copy; 2024 AI Explorer. Projet Web KABORE Juvénis & IDOUFKIR Marouane. W3C Compliant (objectif).</p> <!-- Informations de copyright et de projet -->
+    </footer>
+
+    <!-- Scripts JavaScript -->
+    <script src="js/script.js"></script> <!-- Script principal pour les fonctionnalités du site -->
+    <script src="js/quiz.js" defer></script> <!-- Script pour la gestion des quiz, 'defer' assure son exécution après l'analyse du HTML -->
+    <script>
+    // Apparition animée des articles et effet cascade sur les listes
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          // Animation cascade sur les listes
+          const lists = entry.target.querySelectorAll('ul[data-animate-list]');
+          lists.forEach(ul => {
+            ul.querySelectorAll('li').forEach((li, idx) => {
+              li.style.setProperty('--li-index', idx);
+            });
+          });
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.content-article').forEach(article => {
+      observer.observe(article);
+    });
+    </script>
+</body>
+</html> 

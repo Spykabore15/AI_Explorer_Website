@@ -1,0 +1,972 @@
+/* Styles généraux du corps de page */
+body {
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(ellipse at center, #2c2c54, #1a1a2e); /* Dégradé radial doux */
+    color: #e0e0e0; /* Texte gris clair pour la lisibilité */
+    line-height: 1.7;
+}
+
+.parallax-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.1) 1px, transparent 0);
+    background-size: 20px 20px; /* Taille du motif de points */
+    opacity: 0.5; /* Ajuste la subtilité globale */
+    pointer-events: none; /* N'interfère pas avec la souris */
+}
+
+/* Style général des paragraphes */
+p {
+    text-align: justify;
+}
+
+/* En-tête et navigation */
+header {
+    background-color: #162447; /* Bleu foncé */
+    color: #e0e0e0;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo a {
+    color: #17e9e0; /* Accent bleu/vert */
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #1f4068; /* Bleu plus clair au survol/actif */
+    color: #17e9e0;
+}
+
+/* Menu déroulant */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #162447; /* Même fond que l'en-tête */
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    z-index: 1;
+    border-radius: 0 0 4px 4px;
+    border-top: 1px solid #17e9e0; /* Bordure accent */
+}
+
+.dropdown-content a {
+    color: #e0e0e0;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #1f4068;
+    color: #17e9e0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Zone principale du contenu */
+main {
+    max-width: 1200px;
+    margin: 2.5rem auto;
+    padding: 0 20px;
+}
+
+/* Section titre de page générique */
+.page-title-section {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: rgba(23, 233, 224, 0.05); /* Fond accentué subtil */
+    border-radius: 8px;
+    margin-bottom: 2.5rem;
+}
+
+.page-title-section h1 {
+    color: #FFFFFF; /* Blanc pour contraste */
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombre foncée */
+    transition: color 0.3s ease;
+}
+
+.page-title-section h1:hover {
+    color: #FFFFE0; /* Jaune clair au survol */
+}
+
+.page-title-section p {
+    font-size: 1.1rem;
+    color: #f0f0f0; /* Gris très clair pour le sous-titre */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Ombre foncée */
+    transition: color 0.3s ease;
+}
+
+.page-title-section p:hover {
+    color: #FFFFFF; /* Blanc au survol */
+}
+
+/* Sections de contenu et articles */
+section h2 {
+    color: #17e9e0;
+    border-bottom: 2px solid #1f4068;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+article {
+    background-color: #1f2a40; /* Fond de carte plus foncé */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+article h3 {
+    color: #8bf7f2; /* Sous-titres bleu clair */
+    margin-top: 0;
+}
+
+article ul li strong {
+    color: #a3f8f3;
+}
+
+/* Section Hero */
+#hero {
+    background: linear-gradient(135deg, #162447 0%, #1f4068 100%); /* Dégradé */
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative; /* Au-dessus du fond parallax */
+    z-index: 1;         /* Au-dessus du fond parallax */
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+    color: #fff; /* Titre blanc pour le dégradé */
+    text-shadow: 0 0 10px rgba(23, 233, 224, 0.5);
+    transition: transform 0.3s ease; /* Effet au survol */
+}
+
+#hero h1:hover {
+    transform: scale(1.05); /* Subtle scale on hover */
+}
+
+#hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: #e0e0e0;
+}
+
+.cta-button {
+    background-color: #f39c12; /* Warm orange accent */
+    color: #FFFFFF; /* White text for contrast */
+    padding: 0.9rem 1.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 5px rgba(243, 156, 18, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #e67e22; /* Darker orange on hover */
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(243, 156, 18, 0.5);
+}
+
+/* Overview Section */
+#overview h2 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 2.3rem;
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.overview-item {
+    background-color: #1f2a40; /* Same as article background */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    border: 2px solid transparent; /* For gradient border effect */
+    opacity: 0; /* Initially hidden for scroll animation */
+    transform: translateY(30px); /* Initially slightly moved down */
+    transition: transform 0.5s ease-out, box-shadow 0.3s ease, border-color 0.3s ease, opacity 0.5s ease-out; /* Added opacity and updated transform transition */
+}
+
+.overview-item.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.overview-item:hover {
+    transform: translateY(-5px) rotateY(5deg); /* Lift and subtle 3D tilt */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    border-image: linear-gradient(to right, #17e9e0, #f39c12) 1;
+}
+
+/* Remove old text placeholder style */
+/* .card-icon {
+    display: block;
+    font-size: 2rem; 
+    color: #17e9e0; 
+    margin-bottom: 0.5rem;
+} */
+
+.card-icon-img {
+    display: block;
+    height: 60px; /* Adjust as needed */
+    width: auto;
+    margin: 0 auto 0.75rem auto; /* Center the image and add bottom margin */
+}
+
+.overview-item h3 {
+    color: #17e9e0; /* Accent color */
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.overview-item p {
+    color: #c0c0c0;
+    font-size: 0.95rem;
+}
+
+.overview-item a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #17e9e0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 1px solid #17e9e0;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.overview-item a:hover {
+    background-color: #f39c12; /* Warm orange on hover */
+    border-color: #f39c12;
+    color: #FFFFFF; /* White text */
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #101820; /* Even darker for footer */
+    color: #a0a0a0;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none; /* Initially hide for toggle */
+        width: 100%;
+        background-color: #162447; /* Match header background */
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    nav ul.active {
+        display: flex; /* Show when toggled */
+    }
+
+    nav ul li {
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+    nav ul li a {
+        padding: 0.8rem 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start; /* Align logo to left, toggle to right */
+    }
+    
+    nav .logo {
+        align-self: flex-start;
+    }
+
+    .nav-toggle {
+        display: block; 
+        background: none;
+        border: none;
+        color: #17e9e0; /* Accent color */
+        font-size: 1.8rem;
+        cursor: pointer;
+        position: absolute; /* Position it relative to nav */
+        top: 1rem; 
+        right: 20px;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        border-top: none;
+        background-color: #1f4068; /* Slightly lighter to distinguish from main nav items */
+    }
+    .dropdown-content a {
+        padding-left: 30px; /* Indent dropdown items on mobile */
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none; 
+    }
+
+    .dropdown.active .dropdown-content {
+        display: block; 
+    }
+
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+    #hero p {
+        font-size: 1.1rem;
+    }
+    .page-title-section h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Quiz Styles */
+.quiz-placeholder {
+    background-color: #1f2a40; /* Match article/card background */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin-top: 2rem;
+}
+
+.quiz-question-container {
+    display: flex; /* Added for centering */
+    flex-direction: column; /* Added for centering */
+    align-items: center; /* Added for centering */
+}
+
+.quiz-question-container h3 {
+    color: #17e9e0; /* Accent color */
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+}
+
+#quiz-form div {
+    margin-bottom: 1rem;
+    display: flex; /* Added for alignment */
+    align-items: center; /* Added for vertical alignment */
+}
+
+#quiz-form label {
+    margin-left: 0.7rem;
+    cursor: pointer;
+    color: #333; /* Changed from #e0e0e0 for better contrast on light backgrounds */
+    transition: color 0.3s ease;
+}
+#quiz-form input[type="radio"]:checked + label {
+    color: #17e9e0; /* Accent color for selected choice label */
+    font-weight: bold;
+}
+
+#quiz-form input[type="radio"] {
+    cursor: pointer;
+    accent-color: #17e9e0; /* Style the radio button itself */
+}
+
+#quiz-form button[type="submit"],
+.next-question-btn,
+#retake-quiz-btn {
+    background-color: #17e9e0; /* Accent color */
+    color: #1a1a2e; /* Dark text on bright button */
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#quiz-form button[type="submit"]:hover,
+.next-question-btn:hover,
+#retake-quiz-btn:hover {
+    background-color: #8bf7f2; /* Lighter accent on hover */
+    color: #162447;
+    transform: translateY(-1px);
+}
+
+.feedback {
+    padding: 12px 15px;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    border-left-width: 5px;
+    border-left-style: solid;
+}
+
+.feedback.correct {
+    background-color: rgba(23, 233, 224, 0.1);
+    border-left-color: #17e9e0;
+    color: #17e9e0;
+}
+
+.feedback.incorrect {
+    background-color: rgba(255, 107, 107, 0.1);
+    border-left-color: #ff6b6b;
+    color: #ff6b6b;
+}
+
+/* Style for quiz results */
+.quiz-placeholder h2 {
+    color: #17e9e0;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.quiz-placeholder p {
+    font-size: 1.6rem; /* Augmenté pour une meilleure lisibilité */
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1a1a2e; /* Changé en couleur foncée pour contraste sur fond clair du quiz */
+    font-weight: bold; /* Ajouté pour plus d'emphase */
+}
+
+/* Style for the emphasized quiz score */
+.quiz-score-emphasis {
+    font-size: 2.5rem; /* Significantly larger font size */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    animation: scoreBoom 0.5s ease-out; /* Animation for the boom effect */
+}
+
+@keyframes scoreBoom {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Specific styles for visual placeholders */
+.visual-placeholder {
+    border: 2px dashed #1f4068; /* Dashed border with a theme color */
+    background-color: rgba(31, 64, 104, 0.2); /* Semi-transparent background */
+    color: #8bf7f2; /* Light teal text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 150px; /* Ensure a minimum height */
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    font-style: italic;
+}
+
+/* Style for code block placeholder in ia_experts.html */
+.visual-placeholder pre code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(0,0,0,0.3); /* Darker background for code */
+    padding: 1rem;
+    border-radius: 5px;
+    color: #17e9e0; /* Classic green for code, or use #17e9e0 - corrected from #lime */
+    display: block;
+    white-space: pre-wrap; /* Wrap long lines */
+    font-size: 0.9rem;
+}
+
+/* Style for the deep learning image in bases_ia.html */
+.deep-learning-image {
+    height: 200px;
+    background: #e0e0e0;
+    margin: 1rem 0;
+    display: flex; /* Using flex for alignment, though for a single image it might not be strictly necessary unless it's inside another flex container and needs specific flex properties */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for general lists */
+article ul, section ul {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0;
+}
+article ul li, section ul li {
+    padding-left: 1.5em; /* Space for custom bullet */
+    position: relative;
+    margin-bottom: 0.5em;
+}
+article ul li::before, section ul li::before {
+    content: "\25B8"; /* Unicode for a right-pointing triangle or use an SVG/image */
+    color: #17e9e0; /* Accent color for bullet */
+    position: absolute;
+    left: 0;
+    top: 1px; /* Adjust alignment */
+    font-size: 0.9em;
+}
+article ol li::marker, section ol li::marker {
+    color: #17e9e0; /* Style ordered list markers */
+}
+
+/* Links within general text content */
+a {
+    color: #8bf7f2; /* Lighter teal for general links */
+    text-decoration: none;
+}
+a:hover {
+    color: #17e9e0; /* Brighter teal on hover */
+    text-decoration: underline;
+}
+
+/* Ensure logo link in footer has same style */
+footer a {
+    color: #8bf7f2;
+}
+footer a:hover {
+    color: #17e9e0;
+}
+
+/* Styles for "À Propos" Page Sections */
+.about-section {
+    background-color: #1f2a40; /* Darker card background, consistent with articles */
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.about-section h2 {
+    color: #17e9e0; /* Accent color for section titles */
+    border-bottom: 2px solid #1f4068; /* Consistent with other h2 */
+    padding-bottom: 0.6rem;
+    margin-top: 0; /* Remove default top margin if any */
+    margin-bottom: 1.8rem;
+}
+
+.about-section p {
+    color: #c0c0c0; /* Lighter text for better readability on dark background */
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.about-section p strong {
+    color: #a3f8f3; /* Lighter teal for emphasized text */
+}
+
+.about-section ul {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+    margin-bottom: 1.5rem;
+}
+
+.about-section ul li {
+    color: #c0c0c0;
+    padding-left: 1.5em; /* Space for custom bullet */
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.about-section ul li::before {
+    content: "\272A"; /* Star icon or another suitable icon */
+    color: #17e9e0; /* Accent color for bullets */
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+    top: 0.1em; /* Adjust vertical alignment */
+}
+
+/* Author Bio Enhancements */
+.author-bio {
+    background-color: #162447; /* Slightly different background for differentiation */
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 2rem; /* Increased bottom margin */
+    overflow: hidden; /* To contain floats */
+    border-left: 4px solid #17e9e0; /* Accent border */
+}
+
+.author-bio h3 {
+    color: #8bf7f2; /* Lighter teal */
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.author-bio img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px; 
+    margin-bottom: 10px; 
+    border: 2px solid #17e9e0; 
+}
+
+.author-bio p {
+    color: #d0d0d0; 
+    text-align: justify;
+}
+
+/* Added a specific class for the paragraph after bios for clarity */
+.after-bios-paragraph {
+    margin-top: 20px; /* Replicates the original inline style */
+    color: #c0c0c0; /* Ensuring consistency with other similar paragraphs */
+    line-height: 1.8;
+}
+
+/* Technologies Used Section */
+.technologies-used {
+    background-color: #162447; /* Consistent with author bio for a cohesive look */
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 2rem;
+    border-top: 2px dashed #17e9e0; /* Dashed border for distinction */
+}
+
+.technologies-used h4 {
+    color: #8bf7f2; /* Lighter teal */
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #1f4068;
+    padding-bottom: 0.5rem;
+}
+
+.technologies-used ul li::before {
+    content: '\25CF'; /* Unicode bullet character */
+    color: #17e9e0; /* Accent color for bullets */
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em;
+}
+
+@keyframes fadeInItem {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Ensure clear:both; is handled or remove if flex/grid is used later */
+/* .author-bio .clear { */ /* This class was removed from HTML as overflow:hidden handles it */
+    /* clear: both; */
+/* } */
+
+/* The following .after-bios-paragraph is a duplicate and was removed by a previous step, ensuring it stays removed. */
+/* .after-bios-paragraph {
+    margin-top: 20px;
+} */
+
+/* Article & Section List Styling (general improvements if needed) */
+/* The styles for "article ul, section ul" are defined earlier and are sufficient. */
+/* Duplicated or overly broad selectors here could be removed if they don't add specificity. */
+/* For example, if "article ul, section ul" already covers these cases. */
+
+/* Effet d'apparition au scroll pour les articles */
+.content-article {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1);
+}
+.content-article.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Effet de zoom et ombre sur les images au survol */
+.content-image {
+    transition: transform 0.4s cubic-bezier(.4,0,.2,1), box-shadow 0.4s;
+    box-shadow: 0 4px 24px rgba(23, 233, 224, 0.08);
+}
+.content-image:hover {
+    transform: scale(1.06) rotateZ(-1deg);
+    box-shadow: 0 8px 32px rgba(23, 233, 224, 0.18);
+}
+
+/* Surbrillance animée sur les titres d'article au hover */
+.content-article h3 {
+    transition: color 0.3s, text-shadow 0.3s;
+}
+.content-article h3:hover {
+    color: #17e9e0;
+    text-shadow: 0 2px 12px #17e9e0;
+}
+
+/* Apparition en cascade des listes */
+.content-article ul {
+    opacity: 1;
+    padding-left: 1.2em;
+}
+.content-article ul li {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+.content-article.visible ul li {
+    opacity: 1;
+    transform: translateX(0);
+}
+.content-article.visible ul li {
+    animation: fadeInItem 0.5s ease-out forwards;
+    opacity: 0; /* Start hidden */
+}
+.content-article.visible ul li {
+    transition-delay: calc(0.1s * var(--li-index, 0));
+}
+
+/* Contact Form Styles */
+#contact-nous form div {
+    margin-bottom: 1.5rem;
+}
+
+#contact-nous form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #e0e0e0; /* Light grey text for labels */
+    font-weight: bold;
+}
+
+#contact-nous form input[type="text"],
+#contact-nous form input[type="email"],
+#contact-nous form textarea,
+#contact-nous form select {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #1f2a40; /* Dark background for inputs */
+    color: #e0e0e0; /* Light text for input content */
+    border: 1px solid #17e9e0; /* Accent border */
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact-nous form input[type="text"]:focus,
+#contact-nous form input[type="email"]:focus,
+#contact-nous form textarea:focus,
+#contact-nous form select:focus {
+    border-color: #8bf7f2; /* Lighter accent on focus */
+    box-shadow: 0 0 8px rgba(23, 233, 224, 0.3);
+    outline: none;
+}
+
+#contact-nous form textarea {
+    resize: vertical; /* Allow vertical resize, disable horizontal */
+    min-height: 120px;
+}
+
+#contact-nous form button[type="submit"] {
+    background-color: #f39c12; /* Warm orange accent - same as .cta-button */
+    color: #FFFFFF; /* White text for contrast */
+    padding: 0.9rem 1.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none; /* Remove default border */
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(243, 156, 18, 0.3);
+}
+
+#contact-nous form button[type="submit"]:hover {
+    background-color: #e67e22; /* Darker orange on hover - same as .cta-button:hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(243, 156, 18, 0.5);
+}
+
+/* Style for the conditionally displayed 'Autre' field container */
+#contact-nous form #autre_niveau_etude_div {
+    margin-top: -1rem; /* Adjust spacing if it appears, to be closer to the select */
+    margin-bottom: 1.5rem; /* Ensure consistent bottom margin */
+}
+
+/* Global Quiz Styles */
+#quiz-global-container .options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Spacing between option buttons */
+    margin-top: 15px;
+}
+
+#quiz-global-container .option-btn {
+    background-color: #17e9e0; /* Accent color, similar to other quiz buttons */
+    color: #1a1a2e; /* Dark text on bright button */
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: normal; /* Normal weight, can be bolded on hover/select if desired */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    text-align: left; /* Align text to the left for options */
+}
+
+#quiz-global-container .option-btn:hover {
+    background-color: #8bf7f2; /* Lighter accent on hover */
+    color: #162447;
+    transform: translateY(-1px);
+}
+
+#quiz-global-container .option-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+#quiz-global-result h3 {
+    color: #17e9e0;
+    text-align: center;
+}
+
+#quiz-global-result p {
+    text-align: center; /* Center the score text */
+    font-size: 1.2rem;
+}
+
+/* Countdown style for Global Quiz */
+#quiz-global-container .quiz-countdown {
+    color: #dc3545; /* Red color for countdown */
+    font-size: 1.5rem; /* Slightly larger font size */
+    text-align: center; /* Center the countdown text */
+    margin-top: 20px; /* Add some top margin */
+    margin-bottom: 20px; /* Add some bottom margin */
+}
+
+/* Styling for the pre-score display countdown */
+#quiz-global-result .quiz-score-countdown {
+    color: #e0e0e0; /* Light grey text */
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Keyframes for the score boom effect */
+@keyframes scoreBoomEffect {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Class to apply the boom animation to the score text */
+#quiz-global-result .score-text-boom {
+    display: inline-block; /* Necessary for transform to work */
+    font-weight: bold;
+    animation: scoreBoomEffect 0.6s ease-out;
+}
+
+/* Conditional score colors */
+#quiz-global-result .score-color-red {
+    color: #ff4d4d; /* A more vibrant red for the score */
+}
+
+#quiz-global-result .score-color-green {
+    color: #4dff4d; /* A vibrant green for the score */
+}
+
+/* General enhancement for the quiz result H3 */
+#quiz-global-result h3 {
+    font-size: 2rem; /* Make "Quiz Terminé !" larger */
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* General enhancement for the quiz result P (containing the score) */
+#quiz-global-result p {
+    font-size: 1.4rem; /* Make the score paragraph slightly larger */
+    color: #e0e0e0; /* Ensure good contrast for the surrounding text */
+}
+
+/* Style for the Start Global Quiz button to center it and add margin */
+#start-quiz-global.cta-button {
+    display: block;
+    width: fit-content;
+    margin: 20px auto; /* Centrage et marges verticales */
+}
+
+/* Styles pour le jeu "Cette image est-elle réalisée par une IA ?" */
+.bonne-reponse {
+    color: #28a745; /* vert */
+}
+.mauvaise-reponse {
+    color: #dc3545; /* rouge */
+} 

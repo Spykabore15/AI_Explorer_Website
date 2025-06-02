@@ -1,0 +1,57 @@
+[
+  {
+    "question": "Quelle est la définition la plus appropriée de l'Intelligence Artificielle (IA) parmi les suivantes ?",
+    "choices": [
+      "Des robots qui ressemblent aux humains.",
+      "Un domaine de l'informatique qui vise à créer des machines capables de réaliser des tâches nécessitant typiquement l'intelligence humaine.",
+      "Uniquement l'apprentissage automatique (Machine Learning).",
+      "Des programmes informatiques qui ne font jamais d'erreurs."
+    ],
+    "correctAnswer": 1,
+    "explanation": "L'IA est un vaste champ cherchant à simuler l'intelligence humaine pour diverses tâches, allant au-delà de la simple robotique ou du machine learning seul."
+  },
+  {
+    "question": "Qu'est-ce que l'apprentissage supervisé en Machine Learning ?",
+    "choices": [
+      "L'ordinateur apprend sans aucune donnée étiquetée, en trouvant des structures cachées.",
+      "L'ordinateur apprend à partir de données étiquetées, où la 'bonne réponse' est fournie.",
+      "L'ordinateur apprend par essais et erreurs, en recevant des récompenses ou des punitions.",
+      "L'ordinateur supervise les humains pendant qu'ils travaillent."
+    ],
+    "correctAnswer": 1,
+    "explanation": "En apprentissage supervisé, le modèle est entraîné sur un ensemble de données où les entrées sont associées à des sorties correctes (étiquettes)."
+  },
+  {
+    "question": "Lequel de ces éléments est une caractéristique clé du Deep Learning ?",
+    "choices": [
+      "L'utilisation de tableurs Excel pour l'analyse de données.",
+      "Des algorithmes basés uniquement sur des règles logiques simples.",
+      "Des réseaux de neurones artificiels avec de nombreuses couches (profondes).",
+      "La nécessité d'une intervention humaine constante pour ajuster les paramètres."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Le Deep Learning se distingue par l'utilisation de réseaux de neurones profonds qui apprennent des représentations hiérarchiques des données."
+  },
+  {
+    "question": "Parmi les propositions suivantes, laquelle n'est PAS généralement considérée comme une capacité relevant de l'IA ?",
+    "choices": [
+      "La résolution de problèmes complexes.",
+      "La compréhension du langage naturel.",
+      "L'exécution de calculs arithmétiques basiques (addition, soustraction).",
+      "La perception visuelle (reconnaissance d'objets dans une image)."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bien que les ordinateurs effectuent des calculs arithmétiques, cette tâche en elle-même n'est pas ce qui définit l'IA. L'IA se concentre sur des tâches cognitives plus complexes."
+  },
+  {
+    "question": "Qu'est-ce que l'IA 'faible' ou 'étroite' ?",
+    "choices": [
+      "Une IA qui n'est pas très intelligente.",
+      "Une IA spécialisée dans une tâche spécifique ou un ensemble limité de tâches.",
+      "Une IA qui possède une conscience de soi.",
+      "Une IA qui ne peut fonctionner que sur de petits appareils."
+    ],
+    "correctAnswer": 1,
+    "explanation": "L'IA faible (ou étroite) est conçue et entraînée pour une tâche particulière, comme la reconnaissance vocale ou la recommandation de produits, par opposition à l'IA forte (générale) qui aurait des capacités cognitives humaines."
+  }
+] 

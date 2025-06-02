@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application IA: Vision - AI Explorer</title>
+    <link rel="stylesheet" href="../css/style.css"> <!-- Note the path change for CSS -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.jpeg" alt="AI Explorer Logo" style="height: 32px; width: auto;">
+                </a>
+            </div>
+            <ul>
+                <li><a href="../bases_ia.html">Les bases de l'IA</a></li>
+                <li><a href="../evolution_tendances.html">Evolution et tendances</a></li>
+                <li><a href="../ia_experts.html">IA pour les experts</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Applications</a>
+                    <div class="dropdown-content">
+                        <a href="vision.html">Vision</a>
+                        <a href="nlp.html">NLP</a>
+                        <a href="machine_learning_app.html">Machine Learning</a>
+                        <a href="robotique.html">Robotique</a>
+                        <a href="systemes_experts.html">Systèmes experts</a>
+                        <a href="voix.html">Voix</a>
+                    </div>
+                </li>
+                <li><a href="../quiz_central.html">Quiz central</a></li>
+                <li><a href="../a_propos.html">A propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title-section">
+            <h1>Application de l'IA : Vision par Ordinateur</h1>
+            <p>Comment les machines "voient" et interprètent le monde visuel.</p>
+        </section>
+
+        <section id="explications-exemples">
+            <h2>Explications et Exemples</h2>
+            <article class="content-article">
+                <h3>Qu'est-ce que la Vision par Ordinateur ?</h3>
+                <p>La vision par ordinateur (ou Computer Vision) est un domaine scientifique interdisciplinaire qui cherche à permettre aux ordinateurs "d'interpréter" et de comprendre le monde visuel à partir d'images numériques, de vidéos ou d'autres entrées visuelles. Elle vise à automatiser et à reproduire certaines capacités du système visuel humain, et dans certains cas, à les surpasser en termes de vitesse, de précision ou d'endurance.</p>
+                <p>Concrètement, cela implique le développement d'algorithmes et de modèles capables d'effectuer des tâches telles que :</p>
+                <ul>
+                    <li><strong>Acquisition d'images :</strong> Capturer des images ou des flux vidéo.</li>
+                    <li><strong>Prétraitement :</strong> Améliorer la qualité de l'image (réduction du bruit, ajustement du contraste), normaliser les données.</li>
+                    <li><strong>Extraction de caractéristiques (Feature Extraction) :</strong> Identifier des éléments pertinents dans l'image (contours, coins, textures, points d'intérêt SIFT/SURF, ou caractéristiques apprises par des réseaux de neurones profonds).</li>
+                    <li><strong>Détection et Segmentation :</strong> Localiser des objets spécifiques dans une image (détection) ou diviser une image en régions significatives (segmentation).</li>
+                    <li><strong>Reconnaissance et Classification :</strong> Identifier un objet ou une scène parmi un ensemble de catégories prédéfinies (ex: "chat", "voiture", "paysage urbain").</li>
+                    <li><strong>Suivi (Tracking) :</strong> Suivre le mouvement d'objets dans une séquence vidéo.</li>
+                    <li><strong>Reconstruction 3D :</strong> Estimer la structure tridimensionnelle d'une scène à partir d'images 2D.</li>
+                    <li><strong>Compréhension de scène :</strong> Aller au-delà de la simple reconnaissance d'objets pour comprendre les relations entre eux et le contexte global de la scène.</li>
+                </ul>
+                <p>Les techniques de Deep Learning, en particulier les Réseaux de Neurones Convolutifs (CNN), ont révolutionné la vision par ordinateur ces dernières années, atteignant des performances de pointe sur de nombreuses tâches.</p>
+            </article>
+            <article class="content-article">
+                <h3>Exemples d'Applications Concrètes</h3>
+                <p>La vision par ordinateur est omniprésente et transforme de nombreux secteurs. Voici quelques exemples illustratifs :</p>
+                <ul>
+                    <li><strong>Reconnaissance faciale :</strong> Utilisée pour le déverrouillage sécurisé de smartphones, le contrôle d'accès, la surveillance dans les lieux publics, ou encore le marquage automatique de personnes sur les photos dans les réseaux sociaux. Soulève d'importantes questions éthiques et de vie privée.</li>
+                    <li><strong>Détection et suivi d'objets :</strong> Essentiel pour les véhicules autonomes (détection de piétons, autres véhicules, panneaux de signalisation), les systèmes de surveillance intelligents (détection d'intrusions), le comptage de personnes ou d'objets, et l'analyse sportive (suivi des joueurs et du ballon).</li>
+                    <li><strong>Imagerie médicale :</strong> Aide au diagnostic en analysant des radiographies, scanners IRM, échographies pour détecter des tumeurs, des anomalies, ou quantifier des paramètres physiologiques. Peut améliorer la précision et la rapidité des diagnostics.</li>
+                    <li><strong>Réalité Augmentée (RA) et Réalité Virtuelle (RV) :</strong> La vision par ordinateur permet de comprendre l'environnement réel pour y superposer des informations numériques (RA) ou pour créer des mondes virtuels immersifs et interactifs (RV). Applications dans les jeux, la maintenance, la formation, le design.</li>
+                    <li><strong>Contrôle qualité industriel :</strong> Inspection automatique de produits sur les chaînes de montage pour détecter des défauts de fabrication (rayures, fissures, erreurs d'assemblage) beaucoup plus rapidement et de manière plus fiable que l'inspection humaine.</li>
+                    <li><strong>Agriculture de précision :</strong> Analyse d'images satellites ou de drones pour surveiller la santé des cultures, détecter les maladies ou les infestations de nuisibles, optimiser l'irrigation et la fertilisation.</li>
+                    <li><strong>Robotique :</strong> Permet aux robots de percevoir leur environnement, de naviguer, de manipuler des objets, et d'interagir avec les humains.</li>
+                    <li><strong>Recherche d'images par le contenu (CBIR) :</strong> Retrouver des images similaires à une image requête dans de grandes bases de données (ex: Google Images).</li>
+                    <li><strong>Lecture automatique de plaques d'immatriculation (LAPI) :</strong> Pour le contrôle de stationnement, les péages, la surveillance du trafic.</li>
+                    <li><strong>Biométrie :</strong> Identification par l'iris, les empreintes digitales (bien que ces dernières puissent aussi être traitées comme des images).</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="visuels-placeholders">
+            <h2>Visuels Illustratifs</h2>
+            <p>Quelques exemples visuels pour mieux comprendre :</p>
+            <div class="visual-placeholder content-image" style="margin: 1rem 0; text-align: center;">
+                <img src="../images/v1.png" alt="Exemple de Détection d'Objets v1" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+            </div>
+
+            <div class="visual-placeholder content-image" style="margin: 1rem 0; text-align: center; display:flex; align-items:center; justify-content:center;">
+                <img src="../images/v2.png" alt="Illustration de Segmentation d'Image v2" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+            </div>
+        </section>
+
+        <section id="quiz-application">
+            <h2>Quiz : Vision par Ordinateur</h2>
+            <div class="quiz-placeholder" data-quiz-file="../data/quiz_vision.json" style="padding:20px; background:#f9f9f9; border:1px dashed #ccc; text-align:center;">
+                <p>Chargement du quiz...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AI Explorer. Projet Web KABORE Juvénis & IDOUFKIR Marouane. W3C Compliant (objectif).</p>
+    </footer>
+
+    <script src="../js/script.js"></script> <!-- Note the path change for JS -->
+    <script src="../js/quiz.js" defer></script>
+</body>
+</html> 

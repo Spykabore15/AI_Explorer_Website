@@ -1,0 +1,20 @@
+[
+  {
+    "question": "Que signifie l'acronyme NLP ?",
+    "choices": ["Neural Language Processing", "Natural Language Processing", "Network Learning Protocol", "Numeric Language Parsing"],
+    "correctAnswer": 1,
+    "explanation": "NLP signifie Natural Language Processing (traitement du langage naturel)."
+  },
+  {
+    "question": "Quel modèle est célèbre pour la génération de texte et la compréhension du langage ?",
+    "choices": ["ResNet", "GPT", "YOLO", "VGG"],
+    "correctAnswer": 1,
+    "explanation": "GPT (Generative Pre-trained Transformer) est un modèle phare du NLP moderne."
+  },
+  {
+    "question": "Quelle tâche n'est PAS du ressort du NLP ?",
+    "choices": ["Traduction automatique", "Analyse de sentiments", "Détection d'objets", "Résumé automatique"],
+    "correctAnswer": 2,
+    "explanation": "La détection d'objets relève de la vision par ordinateur, pas du NLP."
+  }
+] 

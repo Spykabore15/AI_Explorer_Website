@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application IA: Systèmes Experts - AI Explorer</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.jpeg" alt="AI Explorer Logo" style="height: 32px; width: auto;">
+                </a>
+            </div>
+            <ul>
+                <li><a href="../bases_ia.html">Les bases de l'IA</a></li>
+                <li><a href="../evolution_tendances.html">Evolution et tendances</a></li>
+                <li><a href="../ia_experts.html">IA pour les experts</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Applications</a>
+                    <div class="dropdown-content">
+                        <a href="vision.html">Vision</a>
+                        <a href="nlp.html">NLP</a>
+                        <a href="machine_learning_app.html">Machine Learning</a>
+                        <a href="robotique.html">Robotique</a>
+                        <a href="systemes_experts.html">Systèmes experts</a>
+                        <a href="voix.html">Voix</a>
+                    </div>
+                </li>
+                <li><a href="../quiz_central.html">Quiz central</a></li>
+                <li><a href="../a_propos.html">A propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title-section">
+            <h1>Application de l'IA : Systèmes Experts</h1>
+            <p>Des systèmes informatiques qui émulent la capacité de prise de décision d'un expert humain.</p>
+        </section>
+
+        <section id="explications-exemples">
+            <h2>Explications et Exemples</h2>
+            <article class="content-article">
+                <h3>Qu'est-ce qu'un Système Expert ? Origines et Principes</h3>
+                <p>Un système expert est un type de programme d'intelligence artificielle conçu pour imiter la capacité de prise de décision et de résolution de problèmes d'un expert humain dans un domaine de connaissance spécifique et restreint. Historiquement, les systèmes experts représentent l'une des premières réussites commerciales et pratiques de l'IA, connaissant leur apogée principalement dans les années 1980.</p>
+                <p>Leur fonctionnement repose sur deux composants principaux :</p>
+                <ol>
+                    <li>
+                        <strong>La Base de Connaissances (Knowledge Base) :</strong> Elle contient les faits, les règles, les heuristiques et les informations spécifiques au domaine d'expertise. Cette connaissance est souvent explicitée sous forme de règles de production (SI... ALORS...). Par exemple :
+                        <ul>
+                            <li><em>SI</em> le patient a de la fièvre ET qu'il tousse, <em>ALORS</em> il pourrait avoir une infection respiratoire.</li>
+                            <li><em>SI</em> le type de moteur est X ET que le symptôme est Y, <em>ALORS</em> la cause probable est Z.</li>
+                        </ul>
+                        La constitution de cette base de connaissances est une étape cruciale, souvent réalisée par des "ingénieurs de la connaissance" qui interrogent des experts humains pour formaliser leur savoir.
+                    </li>
+                    <li>
+                        <strong>Le Moteur d'Inférence (Inference Engine) :</strong> C'est le "cerveau" du système expert. Il applique les règles de la base de connaissances aux faits spécifiques d'un problème donné (fournis par l'utilisateur ou par des capteurs) pour déduire de nouvelles informations, poser des diagnostics, ou proposer des solutions. Il utilise des mécanismes de raisonnement logique, tels que :
+                        <ul>
+                            <li><em>Le chaînage avant (Forward Chaining) :</em> Part des faits initiaux et applique les règles pour déduire de nouvelles conclusions jusqu'à atteindre un but.</li>
+                            <li><em>Le chaînage arrière (Backward Chaining) :</em> Part d'une hypothèse (un but) et cherche à prouver sa validité en remontant la chaîne des règles et des faits nécessaires.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <p>En plus de ces deux éléments centraux, un système expert inclut généralement :</p>
+                <ul>
+                    <li><strong>Une Interface Utilisateur :</strong> Permet à l'utilisateur (souvent non-expert) d'interagir avec le système, de poser des questions, de fournir des informations et de recevoir les résultats.</li>
+                    <li><strong>Un Module d'Explication (optionnel mais souhaitable) :</strong> Capable d'expliquer son raisonnement, c'est-à-dire de montrer quelles règles ont été utilisées pour parvenir à une conclusion. Cela augmente la confiance de l'utilisateur et aide à la validation du système.</li>
+                    <li><strong>Un Module d'Acquisition de Connaissances (parfois) :</strong> Pour faciliter l'ajout ou la modification des connaissances dans la base.</li>
+                </ul>
+                <p>Bien que les techniques plus récentes de Machine Learning et de Deep Learning aient supplanté les systèmes experts dans de nombreux domaines en raison de leur capacité à apprendre à partir de données brutes, les principes des systèmes experts restent pertinents pour la modélisation de connaissances explicites et le raisonnement symbolique.</p>
+            </article>
+            <article class="content-article">
+                <h3>Exemples d'Applications des Systèmes Experts</h3>
+                <p>Malgré l'essor d'autres approches en IA, les systèmes experts ont été et continuent d'être utilisés dans divers domaines où une expertise humaine formalisée est précieuse :</p>
+                <ul>
+                    <li><strong>Diagnostic Médical :</strong>
+                        <p>Des systèmes comme MYCIN (l'un des plus célèbres, développé dans les années 70 pour diagnostiquer les infections sanguines et recommander des antibiotiques) ou CADUCEUS/Internist-I (médecine interne) ont été pionniers. Aujourd'hui, des systèmes d'aide à la décision clinique intègrent des logiques expertes pour assister les médecins dans leurs diagnostics et plans de traitement.</p>
+                    </li>
+                    <li><strong>Planification Financière et Conseil en Investissement :</strong>
+                        <p>Systèmes qui encodent les connaissances d'experts financiers pour fournir des recommandations personnalisées en matière d'investissement, de gestion de patrimoine, ou d'évaluation de la solvabilité pour des prêts.</p>
+                    </li>
+                    <li><strong>Maintenance et Dépannage Technique :</strong>
+                        <p>Diagnostic de pannes dans des équipements complexes (machines industrielles, matériel informatique, véhicules). Le système guide l'utilisateur (souvent un technicien moins expérimenté) à travers une série de questions et de tests pour identifier la cause du problème et proposer des solutions.</p>
+                    </li>
+                    <li><strong>Configuration de Produits et Services Complexes :</strong>
+                        <p>Aider les clients ou les vendeurs à configurer des produits hautement personnalisables (ex: ordinateurs, voitures, systèmes industriels) en s'assurant que les options choisies sont compatibles et répondent aux besoins de l'utilisateur. XCON de Digital Equipment Corporation en était un exemple marquant pour la configuration des systèmes informatiques VAX.</p>
+                    </li>
+                    <li><strong>Domaine Juridique :</strong>
+                        <p>Systèmes d'aide à la recherche de jurisprudence, à l'analyse de contrats pour identifier des clauses spécifiques, ou à la vérification de la conformité réglementaire.</p>
+                    </li>
+                    <li><strong>Contrôle de Processus Industriels :</strong>
+                        <p>Surveillance et contrôle de processus de fabrication, par exemple en chimie ou en production d'énergie, en appliquant des règles pour optimiser les opérations et réagir aux anomalies.</p>
+                    </li>
+                    <li><strong>Géologie et Prospection Minière :</strong>
+                        <p>PROSPECTOR était un système expert utilisé pour aider à l'exploration minière en évaluant la probabilité de trouver certains gisements de minéraux.</p>
+                    </li>
+                    <li><strong>Support Client et Helpdesks :</strong>
+                        <p>Fournir des réponses aux questions fréquentes ou guider les utilisateurs dans la résolution de problèmes techniques simples avant de faire appel à un agent humain.</p>
+                    </li>
+                </ul>
+                <p>Bien que certains de ces rôles soient aujourd'hui également remplis par des systèmes basés sur le Machine Learning, l'approche des systèmes experts reste pertinente lorsque la connaissance est bien structurée, que les règles sont claires, et que l'explicabilité du raisonnement est une priorité.</p>
+            </article>
+        </section>
+
+        <section id="visuels-placeholders">
+            <h2>Visuels Illustratifs</h2>
+            <p>Illustrations du fonctionnement des systèmes experts :</p>
+            <div class="visual-placeholder content-image" style="margin: 1rem 0; text-align: center;">
+                <img src="../images/r3.png" alt="Illustration du concept de Système Expert" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+            </div>
+        </section>
+
+        <section id="quiz-application">
+            <h2>Quiz : Systèmes Experts</h2>
+            <div class="quiz-placeholder" data-quiz-file="../data/quiz_systemes_experts.json" style="padding:20px; background:#f9f9f9; border:1px dashed #ccc; text-align:center;">
+                <p>Chargement du quiz...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AI Explorer. Projet Web KABORE Idoufkir. W3C Compliant (objectif).</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/quiz.js" defer></script>
+</body>
+</html>

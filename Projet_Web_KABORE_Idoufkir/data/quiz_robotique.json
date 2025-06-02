@@ -1,0 +1,20 @@
+[
+  {
+    "question": "Quel domaine de l'IA est essentiel pour la navigation autonome des robots ?",
+    "choices": ["Traitement du langage naturel", "Vision par ordinateur", "Apprentissage par renforcement", "Traduction automatique"],
+    "correctAnswer": 2,
+    "explanation": "L'apprentissage par renforcement permet aux robots d'apprendre à naviguer dans leur environnement."
+  },
+  {
+    "question": "Quel capteur est souvent utilisé par les robots pour percevoir leur environnement ?",
+    "choices": ["Microphone", "LIDAR", "Thermomètre", "Baromètre"],
+    "correctAnswer": 1,
+    "explanation": "Le LIDAR permet de cartographier l'environnement en 3D."
+  },
+  {
+    "question": "Quel robot a battu le champion du monde de Go en 2016 ?",
+    "choices": ["Deep Blue", "AlphaGo", "Watson", "Sophia"],
+    "correctAnswer": 1,
+    "explanation": "AlphaGo, développé par DeepMind, a battu Lee Sedol en 2016."
+  }
+] 

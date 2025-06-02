@@ -1,0 +1,57 @@
+[
+  {
+    "question": "Quel algorithme est le plus adapté pour la classification d'images ?",
+    "choices": [
+      "Régression linéaire",
+      "Réseau de neurones convolutif (CNN)",
+      "K-means",
+      "Arbre de décision"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Les CNN sont spécialement conçus pour le traitement d'images."
+  },
+  {
+    "question": "Quel framework est particulièrement populaire pour la recherche en deep learning grâce à ses graphes dynamiques ?",
+    "choices": [
+      "TensorFlow",
+      "PyTorch",
+      "Scikit-learn",
+      "Keras"
+    ],
+    "correctAnswer": 1,
+    "explanation": "PyTorch est apprécié pour sa flexibilité et ses graphes dynamiques."
+  },
+  {
+    "question": "Quel est le principal risque éthique lié à l'utilisation de données biaisées pour entraîner un modèle d'IA ?",
+    "choices": [
+      "Augmentation de la vitesse d'entraînement",
+      "Décisions discriminatoires",
+      "Réduction de la taille du modèle",
+      "Amélioration de la précision"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Des données biaisées peuvent entraîner des décisions injustes ou discriminatoires."
+  },
+  {
+    "question": "Quel type d'apprentissage permet à un agent d'apprendre par essais/erreurs en recevant des récompenses ou punitions ?",
+    "choices": [
+      "Apprentissage supervisé",
+      "Apprentissage non supervisé",
+      "Apprentissage par renforcement",
+      "Apprentissage semi-supervisé"
+    ],
+    "correctAnswer": 2,
+    "explanation": "L'apprentissage par renforcement repose sur la notion de récompense."
+  },
+  {
+    "question": "Laquelle de ces bibliothèques est spécialisée dans le traitement du langage naturel (NLP) et propose des modèles pré-entraînés comme BERT ou GPT ?",
+    "choices": [
+      "OpenCV",
+      "Hugging Face Transformers",
+      "NumPy",
+      "LightGBM"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Hugging Face Transformers est la référence pour le NLP moderne."
+  }
+] 

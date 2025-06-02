@@ -1,0 +1,188 @@
+<!-- Fichier HTML pour la page centrale des Quiz -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- En-tête du document HTML -->
+    <meta charset="UTF-8"> <!-- Définition de l'encodage des caractères -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuration de la vue pour les appareils mobiles -->
+    <title>Quiz Central - AI Explorer</title> <!-- Titre de la page -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Lien vers la feuille de style CSS principale -->
+    <style>
+        /* Styles spécifiques pour la liste des quiz sur cette page */
+        .quiz-list-item {
+            background-color: #fff; /* Couleur de fond des éléments de la liste */
+            border: 1px solid #ddd; /* Bordure des éléments */
+            padding: 15px; /* Marge intérieure */
+            margin-bottom: 10px; /* Marge inférieure entre les éléments */
+            border-radius: 5px; /* Coins arrondis */
+            display: flex; /* Affichage en flexbox pour aligner les contenus */
+            justify-content: space-between; /* Espacement entre le titre et le lien */
+            align-items: center; /* Alignement vertical des éléments */
+        }
+        .quiz-list-item h3 {
+            margin: 0; /* Supprime la marge par défaut des titres h3 */
+            color: #333; /* Couleur du texte des titres */
+        }
+        .quiz-list-item .quiz-link {
+            background-color: #007bff; /* Couleur de fond des liens de quiz */
+            color: white; /* Couleur du texte des liens */
+            padding: 8px 15px; /* Marge intérieure des liens */
+            text-decoration: none; /* Supprime le soulignement des liens */
+            border-radius: 4px; /* Coins arrondis pour les liens */
+            transition: background-color 0.3s ease; /* Transition douce pour le survol */
+        }
+        .quiz-list-item .quiz-link:hover {
+            background-color: #0056b3; /* Couleur de fond des liens au survol */
+        }
+    </style>
+</head>
+<body>
+    <!-- Corps du document -->
+    <header>
+        <!-- Section d'en-tête de la page -->
+        <nav>
+            <!-- Barre de navigation -->
+            <div class="logo">
+                <!-- Conteneur du logo -->
+                <a href="index.html">
+                    <img src="images/logo.jpeg" alt="AI Explorer Logo" style="height: 32px; width: auto;">
+                </a>
+            </div>
+            <ul>
+                <!-- Liste des liens de navigation -->
+                <li><a href="bases_ia.html">Les bases de l'IA</a></li>
+                <li><a href="evolution_tendances.html">Evolution et tendances</a></li>
+                <li><a href="ia_experts.html">IA pour les experts</a></li>
+                <li class="dropdown">
+                    <!-- Élément de menu déroulant pour les applications de l'IA -->
+                    <a href="javascript:void(0)" class="dropbtn">Applications</a> <!-- Bouton du menu déroulant -->
+                    <div class="dropdown-content">
+                        <!-- Contenu du menu déroulant -->
+                        <a href="applications/vision.html">Vision</a>
+                        <a href="applications/nlp.html">NLP</a>
+                        <a href="applications/machine_learning_app.html">Machine Learning</a>
+                        <a href="applications/robotique.html">Robotique</a>
+                        <a href="applications/systemes_experts.html">Systèmes experts</a>
+                        <a href="applications/voix.html">Voix</a>
+                    </div>
+                </li>
+                <li><a href="quiz_central.html">Quiz central</a></li>
+                <li><a href="a_propos.html">A propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contenu principal de la page -->
+        <section class="page-title-section">
+            <!-- Section du titre de la page -->
+            <h1>Quiz Central</h1> <!-- Titre principal -->
+            <p>Bienvenue au centre de nos quiz interactifs ! Testez et approfondissez votre compréhension de l'intelligence artificielle à travers une variété de sujets. Chaque quiz est conçu pour renforcer les concepts clés présentés sur le site. Choisissez un sujet ci-dessous pour commencer ou relevez le défi du Quiz Global !</p> <!-- Description de la page -->
+        </section>
+
+        <section id="quiz-list">
+            <!-- Section de la liste des quiz -->
+            <h2>Liste des Quiz par Section</h2> <!-- Titre de la section -->
+            <p>Cliquez sur un quiz pour accéder directement à la section correspondante sur la page de contenu et tester vos connaissances.</p> <!-- Instruction pour l'utilisateur -->
+
+            <!-- Quiz sur les Bases de l'IA -->
+            <div class="quiz-list-item">
+                <h3>Quiz : Les Bases de l'IA</h3>
+                <a href="bases_ia.html#quiz-bases" class="quiz-link">Commencer le Quiz</a>
+            </div>
+            <!-- Quiz sur l'Évolution et les Tendances de l'IA -->
+            <div class="quiz-list-item">
+                <h3>Quiz : Évolution et Tendances de l'IA</h3>
+                <a href="evolution_tendances.html#quiz-evolution" class="quiz-link">Commencer le Quiz</a>
+            </div>
+            <!-- Quiz pour les Experts en IA -->
+            <div class="quiz-list-item">
+                <h3>Quiz : IA pour les Experts</h3>
+                <a href="ia_experts.html#quiz-experts" class="quiz-link">Commencer le Quiz</a>
+            </div>
+
+            <h3>Quiz sur les Applications de l'IA :</h3> <!-- Sous-titre pour les quiz d'applications -->
+            <!-- Quiz sur la Vision par Ordinateur -->
+            <div class="quiz-list-item">
+                <h3>Quiz : Vision par Ordinateur</h3>
+                <a href="applications/vision.html#quiz-application" class="quiz-link">Commencer le Quiz</a>
+            </div>
+            <!-- Quiz sur le Traitement du Langage Naturel (NLP) -->
+            <div class="quiz-list-item">
+                <h3>Quiz : Traitement du Langage Naturel (NLP)</h3>
+                <a href="applications/nlp.html#quiz-application" class="quiz-link">Commencer le Quiz</a>
+            </div>
+            <!-- Quiz sur les Applications du Machine Learning -->
+            <div class="quiz-list-item">
+                <h3>Quiz : Applications du Machine Learning</h3>
+                <a href="applications/machine_learning_app.html#quiz-application" class="quiz-link">Commencer le Quiz</a>
+            </div>
+            <!-- Quiz sur la Robotique et l'IA -->
+            <div class="quiz-list-item">
+                <h3>Quiz : Robotique et IA</h3>
+                <a href="applications/robotique.html#quiz-application" class="quiz-link">Commencer le Quiz</a>
+            </div>
+            <!-- Quiz sur les Systèmes Experts -->
+            <div class="quiz-list-item">
+                <h3>Quiz : Systèmes Experts</h3>
+                <a href="applications/systemes_experts.html#quiz-application" class="quiz-link">Commencer le Quiz</a>
+            </div>
+            <!-- Quiz sur les Technologies Vocales -->
+            <div class="quiz-list-item">
+                <h3>Quiz : Technologies Vocales</h3>
+                <a href="applications/voix.html#quiz-application" class="quiz-link">Commencer le Quiz</a>
+            </div>
+
+            <h2>Quiz Global</h2> <!-- Titre pour le quiz global -->
+            <div class="quiz-list-item">
+                <h3>Quiz Global : Testez Toutes Vos Connaissances en IA</h3>
+                <p>Ce quiz complet couvrira des questions issues de toutes les sections du site.</p>
+                <a href="quiz-global.html" class="quiz-link">Commencer le Quiz Global</a>
+            </div>
+        </section>
+
+    </main>
+<div class="jeu-container" style="text-align: center; margin-top: 60px; padding-bottom: 60px;">
+    <h2>Cette image est-elle réalisée par une IA ?</h2>
+    <img id="quiz-image" src="images/b6.jpg" alt="Image IA ou non" style="max-width: 300px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
+    <div style="margin-top: 20px;">
+        <button onclick="checkAnswer(true)" style="margin: 10px; padding: 12px 25px; font-size: 1.1rem; font-weight: bold; background-color: #17e9e0; border: none; border-radius: 8px; color: #162447; cursor: pointer;">Oui</button>
+        <button onclick="checkAnswer(false)" style="margin: 10px; padding: 12px 25px; font-size: 1.1rem; font-weight: bold; background-color: #17e9e0; border: none; border-radius: 8px; color: #162447; cursor: pointer;">Non</button>
+    </div>
+    <p id="resultat" class="jeu-resultat" style="margin-top: 15px; font-size: 1.3rem; font-weight: bold;"></p>
+</div>
+
+<script>
+const images = [
+  { src: "images/b6.jpg", isAI: true },
+  { src: "images/b7.jpg", isAI: false },
+  { src: "images/b8.jpg", isAI: true }
+];
+
+let current = 0;
+
+function checkAnswer(answer) {
+  const correct = images[current].isAI;
+  const resultat = document.getElementById("resultat");
+
+  if (answer === correct) {
+    resultat.textContent = "Bonne réponse !";
+    resultat.className = "jeu-resultat bonne-reponse";
+  } else {
+    resultat.textContent = "Mauvaise réponse...";
+    resultat.className = "jeu-resultat mauvaise-reponse";
+  }
+
+  setTimeout(() => {
+    current = (current + 1) % images.length;
+    document.getElementById("quiz-image").src = images[current].src;
+    resultat.textContent = "";
+    resultat.className = "jeu-resultat";
+  }, 1500);
+}
+</script>
+
+    <!-- Inclusion du script JavaScript principal -->
+    <script src="js/script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application IA: Machine Learning - AI Explorer</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.jpeg" alt="AI Explorer Logo" style="height: 32px; width: auto;">
+                </a>
+            </div>
+            <ul>
+                <li><a href="../bases_ia.html">Les bases de l'IA</a></li>
+                <li><a href="../evolution_tendances.html">Evolution et tendances</a></li>
+                <li><a href="../ia_experts.html">IA pour les experts</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Applications</a>
+                    <div class="dropdown-content">
+                        <a href="vision.html">Vision</a>
+                        <a href="nlp.html">NLP</a>
+                        <a href="machine_learning_app.html">Machine Learning</a>
+                        <a href="robotique.html">Robotique</a>
+                        <a href="systemes_experts.html">Systèmes experts</a>
+                        <a href="voix.html">Voix</a>
+                    </div>
+                </li>
+                <li><a href="../quiz_central.html">Quiz central</a></li>
+                <li><a href="../a_propos.html">A propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title-section">
+            <h1>Application de l'IA : Machine Learning</h1>
+            <p>Explorez comment les systèmes apprennent à partir des données pour améliorer leurs performances.</p>
+        </section>
+
+        <section id="explications-exemples">
+            <h2>Explications et Exemples</h2>
+            <article class="content-article">
+                <h3>Le Machine Learning en Action : Au-delà des Concepts</h3>
+                <p>Le Machine Learning (ML), ou apprentissage automatique, est une branche fondamentale de l'intelligence artificielle qui confère aux systèmes la capacité d'apprendre et de s'améliorer à partir de l'expérience (c'est-à-dire les données) sans être explicitement programmés pour chaque tâche. Alors que la page "Les bases de l'IA" introduit les concepts fondamentaux du ML, cette section se concentre sur la manière dont ces concepts se traduisent en applications tangibles et sur la diversité des approches.</p>
+                <p>Le processus typique d'un projet de Machine Learning comprend plusieurs étapes clés :</p>
+                <ol>
+                    <li><strong>Collecte de Données :</strong> Rassembler les données pertinentes pour le problème à résoudre.</li>
+                    <li><strong>Préparation et Prétraitement des Données :</strong> Nettoyer les données (gestion des valeurs manquantes, des erreurs), les transformer (normalisation, encodage des variables catégorielles), et sélectionner les caractéristiques (features) les plus informatives.</li>
+                    <li><strong>Choix du Modèle :</strong> Sélectionner un ou plusieurs algorithmes de ML adaptés au type de problème (classification, régression, clustering) et à la nature des données.</li>
+                    <li><strong>Entraînement du Modèle (Training) :</strong> Fournir les données préparées à l'algorithme pour qu'il apprenne les patterns et ajuste ses paramètres internes. Dans l'apprentissage supervisé, cela implique de montrer au modèle des exemples avec les réponses attendues.</li>
+                    <li><strong>Évaluation du Modèle :</strong> Tester les performances du modèle entraîné sur un ensemble de données distinct (données de test) qu'il n'a jamais vues, en utilisant des métriques appropriées (précision, rappel, score F1, erreur quadratique moyenne, etc.).</li>
+                    <li><strong>Optimisation (Fine-tuning) :</strong> Ajuster les hyperparamètres du modèle ou essayer différentes architectures pour améliorer ses performances.</li>
+                    <li><strong>Déploiement :</strong> Intégrer le modèle final dans une application ou un système pour qu'il puisse faire des prédictions sur de nouvelles données en conditions réelles.</li>
+                    <li><strong>Suivi et Maintenance :</strong> Surveiller les performances du modèle en production et le ré-entraîner périodiquement avec de nouvelles données pour maintenir sa pertinence.</li>
+                </ol>
+                <p>Cette section explorera plus en détail les types d'apprentissage et leurs applications spécifiques.</p>
+            </article>
+            <article class="content-article">
+                <h3>Types d'Apprentissage et Applications Spécifiques</h3>
+                <p>Le Machine Learning se décline en plusieurs paradigmes d'apprentissage, chacun adapté à des types de problèmes et de données différents :</p>
+                <ul>
+                    <li><strong>Apprentissage Supervisé (Supervised Learning) :</strong>
+                        <p>Dans ce mode, l'algorithme apprend à partir d'un ensemble de données d'entraînement où chaque exemple est accompagné d'une "étiquette" ou "cible" correcte. Le but est d'apprendre une fonction qui mappe les entrées aux sorties désirées.</p>
+                        <ul>
+                            <li>
+                                <strong>Classification :</strong> La cible est une catégorie discrète. L'objectif est d'attribuer une classe à un nouvel exemple.
+                                <br><em>Exemples d'applications :</em>
+                                <ul>
+                                    <li>Détection de spam dans les e-mails (spam/non-spam).</li>
+                                    <li>Diagnostic médical (ex: identifier si une tumeur est bénigne ou maligne à partir d'images médicales).</li>
+                                    <li>Reconnaissance d'images (classifier une image comme "chat", "chien", "voiture").</li>
+                                    <li>Approbation de crédit (approuver/rejeter une demande de prêt).</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Régression :</strong> La cible est une valeur continue. L'objectif est de prédire une quantité numérique.
+                                <br><em>Exemples d'applications :</em>
+                                <ul>
+                                    <li>Prédiction des prix de l'immobilier en fonction des caractéristiques d'une maison.</li>
+                                    <li>Prévisions météorologiques (prédire la température, les précipitations).</li>
+                                    <li>Estimation de la demande pour un produit.</li>
+                                    <li>Prédiction du cours d'une action en bourse.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>Apprentissage Non Supervisé (Unsupervised Learning) :</strong>
+                        <p>Ici, l'algorithme travaille avec des données non étiquetées. Le but est de découvrir des structures, des motifs ou des relations cachées dans les données sans guide explicite.</p>
+                        <ul>
+                            <li>
+                                <strong>Clustering (Regroupement) :</strong> Grouper des points de données similaires en clusters distincts.
+                                <br><em>Exemples d'applications :</em>
+                                <ul>
+                                    <li>Segmentation de clientèle (identifier des groupes de clients aux comportements similaires).</li>
+                                    <li>Détection d'anomalies (identifier des transactions frauduleuses ou des pannes de système).</li>
+                                    <li>Organisation de grands ensembles de documents par thèmes.</li>
+                                    <li>Analyse de réseaux sociaux pour identifier des communautés.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Réduction de Dimensionnalité :</strong> Réduire le nombre de variables (caractéristiques) tout en préservant l'information essentielle. Utile pour la visualisation, la compression de données, ou pour améliorer les performances d'autres algorithmes.
+                                <br><em>Exemples d'applications :</em>
+                                <ul>
+                                    <li>Analyse en Composantes Principales (ACP) pour visualiser des données de haute dimension.</li>
+                                    <li>Compression d'images ou de vidéos.</li>
+                                    <li>Prétraitement pour des algorithmes de classification ou de régression.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Apprentissage de Règles d'Association :</strong> Découvrir des relations intéressantes entre les variables dans de grands ensembles de données (ex: "les clients qui achètent du pain achètent aussi souvent du beurre").</li>
+                        </ul>
+                    </li>
+                    <li><strong>Apprentissage par Renforcement (Reinforcement Learning) :</strong>
+                        <p>L'algorithme (ou "agent") apprend à prendre des décisions en interagissant avec un environnement. Il reçoit des récompenses ou des punitions en fonction des actions qu'il effectue, et son objectif est de développer une stratégie (politique) qui maximise la récompense cumulée sur le long terme.</p>
+                        <em>Exemples d'applications :</em>
+                        <ul>
+                            <li>Robotique (apprendre à un robot à marcher, à saisir des objets, à naviguer).</li>
+                            <li>Jeux (créer des IA capables de jouer à des jeux complexes comme les échecs, Go (AlphaGo), ou les jeux vidéo).</li>
+                            <li>Systèmes de recommandation dynamiques et personnalisés.</li>
+                            <li>Optimisation de processus industriels ou logistiques.</li>
+                            <li>Gestion de portefeuille financier.</li>
+                        </ul>
+                    </li>
+                     <li><strong>Apprentissage Auto-Supervisé (Self-Supervised Learning) :</strong>
+                        <p>Une forme d'apprentissage où les étiquettes sont générées automatiquement à partir des données elles-mêmes. Par exemple, en NLP, on peut masquer un mot dans une phrase et demander au modèle de le prédire. C'est une technique clé derrière le succès de nombreux grands modèles de langage.</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="visuels-placeholders">
+            <h2>Visuels Illustratifs</h2>
+            <p>Illustrations des concepts et applications du ML :</p>
+            <div class="visual-placeholder content-image" style="margin: 1rem 0; text-align: center;">
+                <img src="../images/m1.png" alt="Illustration d'un concept de Machine Learning" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+            </div>
+        </section>
+
+        <section id="quiz-application">
+            <h2>Quiz : Applications du Machine Learning</h2>
+            <div class="quiz-placeholder" data-quiz-file="../data/quiz_machine_learning_app.json" style="padding:20px; background:#f9f9f9; border:1px dashed #ccc; text-align:center;">
+                <p>Chargement du quiz...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AI Explorer. Projet Web KABORE Juvénis & IDOUFKIR Marouane. W3C Compliant (objectif).</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/quiz.js" defer></script>
+</body>
+</html> 
